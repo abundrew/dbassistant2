@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:dbassistant"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525" Icon="image/png_16/ico_table_multiple_16.png">
+        Title="DB Assistant" Height="350" Width="525" MinHeight="320" MinWidth="480" Icon="image/ico/ico_data_find.ico">
     <Window.CommandBindings>
         <CommandBinding Command="local:Commands.Open" Executed="OpenCommand_Executed"></CommandBinding>
         <CommandBinding Command="local:Commands.Exit" Executed="ExitCommand_Executed"></CommandBinding>
@@ -17,9 +17,9 @@
     </Window.CommandBindings>
     <Window.Resources>
         <ResourceDictionary>
-            <BitmapImage x:Key="Open" UriSource="image/png_16/ico_folder_16.png" />
-            <BitmapImage x:Key="Routines" UriSource="image/png_16/ico_list_16.png" />
-            <BitmapImage x:Key="Tables" UriSource="image/png_16/ico_table_multiple_16.png" />
+            <BitmapImage x:Key="Open" UriSource="image/png_16/png_folder_16.png" />
+            <BitmapImage x:Key="Routines" UriSource="image/png_16/png_data_scroll_16.png" />
+            <BitmapImage x:Key="Tables" UriSource="image/png_16/png_data_table_16.png" />
         </ResourceDictionary>
     </Window.Resources>
     <Grid>
@@ -27,16 +27,16 @@
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="*"/>
-            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="24"/>
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
-        <Menu IsMainMenu="True">
+        <Menu IsMainMenu="True" Grid.Row="0" Grid.Column="0">
             <MenuItem Header="_File">
                 <MenuItem Command="local:Commands.Open">
                     <MenuItem.Icon>
-                        <Image Source="{StaticResource Open}"/>
+                        <Image Source="{StaticResource Open}" Width="16" Height="16"/>
                     </MenuItem.Icon>
                 </MenuItem>
                 <Separator/>
@@ -45,12 +45,12 @@
             <MenuItem Header="_Object">
                 <MenuItem Command="local:Commands.Tables">
                     <MenuItem.Icon>
-                        <Image Source="{StaticResource Tables}"/>
+                        <Image Source="{StaticResource Tables}" Width="16" Height="16"/>
                     </MenuItem.Icon>
                 </MenuItem>
                 <MenuItem Command="local:Commands.Routines">
                     <MenuItem.Icon>
-                        <Image Source="{StaticResource Routines}"/>
+                        <Image Source="{StaticResource Routines}" Width="16" Height="16"/>
                     </MenuItem.Icon>
                 </MenuItem>
             </MenuItem>
@@ -63,5 +63,33 @@
                 <MenuItem Command="local:Commands.About"/>
             </MenuItem>
         </Menu>
+        <StatusBar Grid.Row="3" Grid.Column="0">
+            <StatusBar.ItemsPanel>
+                <ItemsPanelTemplate>
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto"/>
+                            <ColumnDefinition Width="Auto"/>
+                            <ColumnDefinition Width="Auto"/>
+                            <ColumnDefinition Width="Auto"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                    </Grid>
+                </ItemsPanelTemplate>
+            </StatusBar.ItemsPanel>
+            <StatusBarItem Grid.Column="0">
+                <Image Source="image/png_16/png_businessman_16.png" Width="16" Height="16" ToolTip="User"/>
+            </StatusBarItem>
+            <StatusBarItem Grid.Column="1">
+                <TextBlock ToolTip="User">User</TextBlock>
+            </StatusBarItem>
+            <Separator Grid.Column="2"/>
+            <StatusBarItem Grid.Column="3">
+                <Image Source="image/png_16/png_data_16.png" Width="16" Height="16" ToolTip="Server"/>
+            </StatusBarItem>
+            <StatusBarItem Grid.Column="4">
+                <TextBlock ToolTip="Server">Server</TextBlock>
+            </StatusBarItem>
+        </StatusBar>
     </Grid>
 </Window>

@@ -99,9 +99,80 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="image\png_16\ico_folder_16.png" />
-    <Resource Include="image\png_16\ico_list_16.png" />
-    <Resource Include="image\png_16\ico_table_multiple_16.png" />
+    <Resource Include="image\ico\businessman.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="image\ico\ico_data_find.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="image\ico\data_table.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="image\ico\data_scroll.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="image\ico\data.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="image\ico\table.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="image\ico\data_copy.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="image\ico\tables.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="image\ico\table_ok.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="image\ico\check.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="image\ico\folder.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="image\ico\scroll_ok.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="image\ico\scroll.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="image\ico\text_code.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="image\png_16\png_data_16.png" />
+    <Resource Include="image\png_16\data_ok.png" />
+    <Resource Include="image\png_16\png_data_scroll_16.png" />
+    <Resource Include="image\png_16\png_data_table_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="image\png_16\table.png" />
+    <Resource Include="image\png_16\png_tables_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="image\png_16\table_ok.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="image\png_16\text_code.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="image\png_16\scroll.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="image\png_16\png_folder_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="image\png_16\check.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="image\png_16\scroll_ok.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="image\png_16\png_businessman_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="image\png_16\data_find.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
